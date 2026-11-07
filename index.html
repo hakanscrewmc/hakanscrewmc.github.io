@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otomasyon Stüdyosu</title>
+<meta name="description" content="Otomasyon Stüdyosu is a private desktop tool that uploads and schedules videos to the owner's own YouTube channels.">
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#5b5b57; --line:#e2e1da; --accent:#b4232a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ecebe6; --muted:#a3a29b; --line:#2c2c2a; --accent:#e5585f; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  .alt { color:var(--muted); margin:0 0 32px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; }
+  ul { padding-left:1.2em; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Otomasyon Stüdyosu</h1>
+  <p class="alt">A private publishing tool for the owner's own YouTube channels</p>
+
+  <h2>What the app does</h2>
+  <p>Otomasyon Stüdyosu is a desktop application that runs only on its owner's own computer. The owner produces music and
+  educational animation videos and uses this tool to publish them to YouTube channels that the owner personally manages.
+  It is not offered to the public and has no other users.</p>
+
+  <h2>How it uses YouTube</h2>
+  <p>After the channel owner signs in with Google and grants permission, the app uses the YouTube Data API to:</p>
+  <ul>
+    <li>upload finished videos to the authorized channel and schedule their publish date;</li>
+    <li>set the video thumbnail, title, description and tags, and change the scheduled publish date later if needed;</li>
+    <li>read the channel's own basic information and statistics (channel name, video list, view and subscriber counts) to plan uploads;</li>
+    <li>post a comment from the channel on its own videos and update the channel's own banner image.</li>
+  </ul>
+  <p>The app only acts on the channels whose owner authorized it. It does not access other people's channels, Gmail, contacts,
+  or any other Google data.</p>
+
+  <h2>Google sign-in scopes</h2>
+  <ul>
+    <li><code>youtube.upload</code> — upload videos to the authorized channel</li>
+    <li><code>youtube.readonly</code> — read the authorized channel's own information and statistics</li>
+    <li><code>youtube.force-ssl</code> — update the authorized channel's own videos (metadata, schedule, thumbnail), comments and banner</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">Privacy Policy</a> for how data from Google is handled, stored and deleted.
+  Otomasyon Stüdyosu's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <footer>
+    Otomasyon Stüdyosu · Contact: <a href="mailto:trfingerrr@gmail.com">trfingerrr@gmail.com</a> ·
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a><br>
+    This app uses YouTube API Services. See the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+  </footer>
+</main>
+</body>
+</html>
